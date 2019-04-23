@@ -10,6 +10,28 @@ export default function appReducer(state = initialState, action) {
         }
       }
 
+    case types.GET_POSTS_SUCCESS:
+      const posts = action.posts ? action.posts : []
+
+      return {
+        app: {
+          users: state.app.users.map(user => {
+            return user.id === action.userId ? {...user, posts} : {...user}
+          })
+        }
+      }
+
+    case types.GET_ALBUMS_SUCCESS:
+      const albums = action.albums ? action.albums : []
+
+      return {
+        app: {
+          users: state.app.users.map(user => {
+            return user.id === action.userId ? {...user, albums} : {...user}
+          })
+        }
+      }
+
     default:
       return state;
   }
