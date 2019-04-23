@@ -37,7 +37,10 @@ ShallowWrapper {
         <code>
           Good luck :)
         </code>,
-        <CardList />,
+        <CardList
+          toggleCard={[Function]}
+          users={Array []}
+        />,
       ],
       "className": "App",
     },
@@ -70,7 +73,8 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "users": undefined,
+          "toggleCard": [Function],
+          "users": Array [],
         },
         "ref": null,
         "rendered": null,
@@ -92,7 +96,10 @@ ShallowWrapper {
           <code>
             Good luck :)
           </code>,
-          <CardList />,
+          <CardList
+            toggleCard={[Function]}
+            users={Array []}
+          />,
         ],
         "className": "App",
       },
@@ -125,7 +132,8 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "users": undefined,
+            "toggleCard": [Function],
+            "users": Array [],
           },
           "ref": null,
           "rendered": null,

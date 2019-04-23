@@ -30,12 +30,17 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <header>
+        <header
+          role="button"
+          title="Click to toggle card"
+        >
           <h3>
             John Dalton
           </h3>
         </header>,
-        <div>
+        <div
+          className="body"
+        >
           <dl>
             <dt>
               E-mail:
@@ -74,6 +79,9 @@ ShallowWrapper {
           "children": <h3>
             John Dalton
           </h3>,
+          "onClick": undefined,
+          "role": "button",
+          "title": "Click to toggle card",
         },
         "ref": null,
         "rendered": Object {
@@ -118,6 +126,7 @@ ShallowWrapper {
               userId={10}
             />
           </dl>,
+          "className": "body",
         },
         "ref": null,
         "rendered": Object {
@@ -262,12 +271,17 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <header>
+          <header
+            role="button"
+            title="Click to toggle card"
+          >
             <h3>
               John Dalton
             </h3>
           </header>,
-          <div>
+          <div
+            className="body"
+          >
             <dl>
               <dt>
                 E-mail:
@@ -306,6 +320,9 @@ ShallowWrapper {
             "children": <h3>
               John Dalton
             </h3>,
+            "onClick": undefined,
+            "role": "button",
+            "title": "Click to toggle card",
           },
           "ref": null,
           "rendered": Object {
@@ -350,6 +367,7 @@ ShallowWrapper {
                 userId={10}
               />
             </dl>,
+            "className": "body",
           },
           "ref": null,
           "rendered": Object {

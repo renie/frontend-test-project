@@ -8,12 +8,28 @@
   display: block;
   position: relative;
   width: 33.33%;
+}
 
+.card .body {
+  max-height: 800px;
+  overflow: hidden;
+  transition: all 200ms linear;
+}
+
+.card.hidden header {
+  border-bottom: none;
+  padding: 10px 0 0;
+}
+
+.card.hidden .body {
+  max-height: 0;
 }
 
 .card header {
+  cursor: pointer;
   border-bottom: 1px solid #ddd;
   padding: 10px 0;
+  transition: all 200ms linear;
 }
 
 .card h3 {
