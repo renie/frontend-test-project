@@ -1,13 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import configureMockStore from 'redux-mock-store';
-import thunk from 'redux-thunk';
-import { shallow } from 'enzyme';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import configureMockStore from 'redux-mock-store'
+import thunk from 'redux-thunk'
+import { shallow } from 'enzyme'
+import fetchMock from 'fetch-mock'
 
-import fetchMock from 'fetch-mock';
 import { PostList } from './PostList'
-import { fetchPosts } from '../../actions/actions';
-import { getAPIUrl } from '../../constants/url.js';
+import { fetchPosts } from '../../actions/actions'
+import { getAPIUrl } from '../../constants/url.js'
 
 
 const mockStore = configureMockStore([thunk])
@@ -15,7 +15,7 @@ const mockStore = configureMockStore([thunk])
 describe('PostList', () => {
   afterEach(() => {
     fetchMock.restore()
-  });
+  })
 
   it('Create Component', () => {
     const expectedBody = [];
@@ -28,8 +28,8 @@ describe('PostList', () => {
       headers: { 'content-type': 'application/json' }
     })
 
-    const wrapper = shallow(<PostList store={store} fetchPosts={mockfetchPost} userId={id} users={[]} />);
+    const wrapper = shallow(<PostList store={store} fetchPosts={mockfetchPost} userId={id} users={[]} />)
 
     expect(wrapper).toMatchSnapshot();
-  });
-});
+  })
+})

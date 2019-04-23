@@ -1,7 +1,8 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
+import React, { Component } from 'react'
+import { connect } from 'react-redux'
+
 import Post from './Post'
-import { fetchPosts } from '../../actions/actions';
+import { fetchPosts } from '../../actions/actions'
 import './postList.css'
 
 export class PostList extends Component {
@@ -24,7 +25,7 @@ export class PostList extends Component {
           }
         </ul>
       </div>
-    );
+    )
   }
 }
 

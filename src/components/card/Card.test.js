@@ -1,7 +1,7 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react'
+import ReactDOM from 'react-dom'
 import Card from './Card'
-import { shallow } from 'enzyme';
+import { shallow } from 'enzyme'
 
 describe('Card', () => {
   it('Create Component', () => {
@@ -14,8 +14,8 @@ describe('Card', () => {
       }
     }
 
-    const wrapper = shallow(<Card user={user} />);
+    const wrapper = shallow(<Card user={user} />)
 
-    expect(wrapper).toMatchSnapshot();
-  });
-});
+    expect(wrapper).toMatchSnapshot()
+  })
+})

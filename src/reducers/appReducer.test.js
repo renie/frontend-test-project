@@ -1,6 +1,6 @@
-import reducer from './appReducer';
-import * as types from '../constants/actionTypes';
-import initialState from './initialState';
+import reducer from './appReducer'
+import * as types from '../constants/actionTypes'
+import initialState from './initialState'
 
 
 describe('Reducers', () => {
@@ -21,7 +21,7 @@ describe('Reducers', () => {
         "name": "Ervin Howell",
         "username": "Antonette"
       }
-    ];
+    ]
 
     const usersComplete = users.map(user=>({...user, posts: [], albums: []}))
 

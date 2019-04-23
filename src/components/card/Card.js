@@ -1,7 +1,7 @@
-import React from 'react';
+import React from 'react'
 import PostList from '../posts/PostList'
 import AlbumList from '../albums/AlbumList'
-import './card.css';
+import './card.css'
 
 
 const Card = ({user, toggleCard}) => {
@@ -21,7 +21,7 @@ const Card = ({user, toggleCard}) => {
         </dl>
       </div>
     </li>
-  );
+  )
 }
 
-export default Card;
+export default Card

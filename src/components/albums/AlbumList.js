@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
+import React, { Component } from 'react'
+import { connect } from 'react-redux'
 import Album from './Album'
-import { fetchAlbums } from '../../actions/actions';
+import { fetchAlbums } from '../../actions/actions'
 import './albumList.css'
 
 export class AlbumList extends Component {

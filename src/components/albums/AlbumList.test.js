@@ -1,13 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import configureMockStore from 'redux-mock-store';
-import thunk from 'redux-thunk';
-import { shallow } from 'enzyme';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import configureMockStore from 'redux-mock-store'
+import thunk from 'redux-thunk'
+import { shallow } from 'enzyme'
+import fetchMock from 'fetch-mock'
 
-import fetchMock from 'fetch-mock';
 import { AlbumList } from './AlbumList'
-import { fetchAlbums } from '../../actions/actions';
-import { getAPIUrl } from '../../constants/url.js';
+import { fetchAlbums } from '../../actions/actions'
+import { getAPIUrl } from '../../constants/url.js'
 
 
 const mockStore = configureMockStore([thunk])
@@ -28,8 +28,8 @@ describe('AlbumList', () => {
       headers: { 'content-type': 'application/json' }
     })
 
-    const wrapper = shallow(<AlbumList store={store} fetchAlbums={mockfetchAlbum} userId={id} users={[]} />);
+    const wrapper = shallow(<AlbumList store={store} fetchAlbums={mockfetchAlbum} userId={id} users={[]} />)
 
-    expect(wrapper).toMatchSnapshot();
-  });
-});
+    expect(wrapper).toMatchSnapshot()
+  })
+})

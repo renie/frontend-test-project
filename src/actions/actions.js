@@ -2,12 +2,12 @@ import { getAPIUrl } from '../constants/url.js'
 import * as types from '../constants/actionTypes.js'
 
 
-const requestUsers = () => ({ type: types.GET_USERS_REQUEST });
-const receiveUsers = users => ({ type: types.GET_USERS_SUCCESS, users });
-const errorUsers = error => ({ type: types.GET_USERS_ERROR, error });
+const requestUsers = () => ({ type: types.GET_USERS_REQUEST })
+const receiveUsers = users => ({ type: types.GET_USERS_SUCCESS, users })
+const errorUsers = error => ({ type: types.GET_USERS_ERROR, error })
 
 export const fetchUsers = () => dispatch => {
-  dispatch(requestUsers());
+  dispatch(requestUsers())
 
   return fetch(getAPIUrl('users'))
       .then(
@@ -21,12 +21,13 @@ export const fetchUsers = () => dispatch => {
         error => dispatch(errorUsers(error)))
 }
 
-const requestPosts = userId => ({ type: types.GET_POSTS_REQUEST, userId: userId });
-const receivePosts = (userId, posts) => ({ type: types.GET_POSTS_SUCCESS, userId: userId, posts });
-const errorPosts = error => ({ type: types.GET_POSTS_ERROR, error });
+
+const requestPosts = userId => ({ type: types.GET_POSTS_REQUEST, userId: userId })
+const receivePosts = (userId, posts) => ({ type: types.GET_POSTS_SUCCESS, userId: userId, posts })
+const errorPosts = error => ({ type: types.GET_POSTS_ERROR, error })
 
 export const fetchPosts = userId => dispatch => {
-  dispatch(requestPosts(userId));
+  dispatch(requestPosts(userId))
 
   return fetch(getAPIUrl('posts', userId))
       .then(
@@ -40,12 +41,13 @@ export const fetchPosts = userId => dispatch => {
         error => dispatch(errorPosts(error)))
 }
 
-const requestAlbums = userId => ({ type: types.GET_ALBUMS_REQUEST, userId: userId });
-const receiveAlbums = (userId, albums) => ({ type: types.GET_ALBUMS_SUCCESS, userId: userId, albums });
-const errorAlbums = error => ({ type: types.GET_ALBUMS_ERROR, error });
+
+const requestAlbums = userId => ({ type: types.GET_ALBUMS_REQUEST, userId: userId })
+const receiveAlbums = (userId, albums) => ({ type: types.GET_ALBUMS_SUCCESS, userId: userId, albums })
+const errorAlbums = error => ({ type: types.GET_ALBUMS_ERROR, error })
 
 export const fetchAlbums = userId => dispatch => {
-  dispatch(requestAlbums(userId));
+  dispatch(requestAlbums(userId))
 
   return fetch(getAPIUrl('albums', userId))
       .then(
