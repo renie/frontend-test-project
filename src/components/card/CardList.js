@@ -1,6 +1,5 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import Card from './Card';
+import React from 'react'
+import Card from './Card'
 
 import './cardList.css'
 
@@ -13,7 +12,7 @@ const CardList = ({ users = [] }) => {
       ))
     }
     </ul>
-  );
+  )
 }
 
-export default CardList;
+export default CardList
