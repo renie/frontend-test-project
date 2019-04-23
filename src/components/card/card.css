@@ -1,0 +1,38 @@
+.card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  list-style: none;
+  margin: 0 8px 8px 0;
+  padding: 0px 10px 10px;
+
+  display: block;
+  position: relative;
+  width: 33.33%;
+
+}
+
+.card header {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.card h3 {
+  margin: 0;
+  text-align: center;
+}
+
+.card dt {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.card dd {
+  color: #666;
+  font-size: 12px;
+  font-weight: normal;
+  margin: 0 0 10px 10px;
+}
+
+.card dd a {
+  color: inherit;
+}

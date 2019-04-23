@@ -1,5 +1,5 @@
 export default {
-    app: {
-    	users: []
-    }
+  app: {
+    users: []
+  }
 };
