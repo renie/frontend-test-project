@@ -1,13 +1,16 @@
-import * as actions from '../actions/actions';
+import * as types from '../constants/actionTypes';
 import initialState from './initialState';
 
+export default function appReducer(state = initialState, action) {
+  switch (action.type) {
+    case types.GET_USERS_SUCCESS:
+      return {
+        app: {
+          users: action.users ? action.users : []
+        }
+      }
 
-export default function appReducer(state = initialState.app, action) {
-    switch (action.type) {
-        case actions.GET_USERS_REQUEST:
-            return action.users
-
-        default:
-            return state;
-    }
+    default:
+      return state;
+  }
 }
