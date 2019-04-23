@@ -23,12 +23,14 @@ describe('Reducers', () => {
       }
     ];
 
+    const usersComplete = users.map(user=>({...user, posts: [], albums: []}))
+
     expect(
       reducer(initialState, {
         type: types.GET_USERS_SUCCESS,
         users: users
       })
-    ).toEqual({ app: { users: users }})
+    ).toEqual({ app: { users: usersComplete }})
 
     expect(
       reducer({ app: { users: users }}, {

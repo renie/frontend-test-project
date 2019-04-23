@@ -1,0 +1,516 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card Create Component 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Card
+    user={
+      Object {
+        "company": Object {
+          "name": "Huuuuge company",
+        },
+        "email": "j.dalton@company.com",
+        "id": 10,
+        "name": "John Dalton",
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <header>
+          <h3>
+            John Dalton
+          </h3>
+        </header>,
+        <div>
+          <dl>
+            <dt>
+              E-mail:
+            </dt>
+            <dd>
+              <a
+                href="mailto:j.dalton@company.com"
+              >
+                j.dalton@company.com
+              </a>
+            </dd>
+            <dt>
+              Company:
+            </dt>
+            <dd>
+              Huuuuge company
+            </dd>
+            <UNDEFINED
+              userId={10}
+            />
+            <UNDEFINED
+              userId={10}
+            />
+          </dl>
+        </div>,
+      ],
+      "className": "card",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <h3>
+            John Dalton
+          </h3>,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "John Dalton",
+          },
+          "ref": null,
+          "rendered": "John Dalton",
+          "type": "h3",
+        },
+        "type": "header",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <dl>
+            <dt>
+              E-mail:
+            </dt>
+            <dd>
+              <a
+                href="mailto:j.dalton@company.com"
+              >
+                j.dalton@company.com
+              </a>
+            </dd>
+            <dt>
+              Company:
+            </dt>
+            <dd>
+              Huuuuge company
+            </dd>
+            <UNDEFINED
+              userId={10}
+            />
+            <UNDEFINED
+              userId={10}
+            />
+          </dl>,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <dt>
+                E-mail:
+              </dt>,
+              <dd>
+                <a
+                  href="mailto:j.dalton@company.com"
+                >
+                  j.dalton@company.com
+                </a>
+              </dd>,
+              <dt>
+                Company:
+              </dt>,
+              <dd>
+                Huuuuge company
+              </dd>,
+              <UNDEFINED
+                userId={10}
+              />,
+              <UNDEFINED
+                userId={10}
+              />,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "E-mail:",
+              },
+              "ref": null,
+              "rendered": "E-mail:",
+              "type": "dt",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <a
+                  href="mailto:j.dalton@company.com"
+                >
+                  j.dalton@company.com
+                </a>,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "j.dalton@company.com",
+                  "href": "mailto:j.dalton@company.com",
+                },
+                "ref": null,
+                "rendered": "j.dalton@company.com",
+                "type": "a",
+              },
+              "type": "dd",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Company:",
+              },
+              "ref": null,
+              "rendered": "Company:",
+              "type": "dt",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Huuuuge company",
+              },
+              "ref": null,
+              "rendered": "Huuuuge company",
+              "type": "dd",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "userId": 10,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": Object {
+                "$$typeof": Symbol(react.memo),
+                "WrappedComponent": [Function],
+                "compare": null,
+                "displayName": "Connect(PostList)",
+                "type": [Function],
+                Symbol(Symbol.hasInstance): [Function],
+              },
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "userId": 10,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": Object {
+                "$$typeof": Symbol(react.memo),
+                "WrappedComponent": [Function],
+                "compare": null,
+                "displayName": "Connect(AlbumList)",
+                "type": [Function],
+                Symbol(Symbol.hasInstance): [Function],
+              },
+            },
+          ],
+          "type": "dl",
+        },
+        "type": "div",
+      },
+    ],
+    "type": "li",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <header>
+            <h3>
+              John Dalton
+            </h3>
+          </header>,
+          <div>
+            <dl>
+              <dt>
+                E-mail:
+              </dt>
+              <dd>
+                <a
+                  href="mailto:j.dalton@company.com"
+                >
+                  j.dalton@company.com
+                </a>
+              </dd>
+              <dt>
+                Company:
+              </dt>
+              <dd>
+                Huuuuge company
+              </dd>
+              <UNDEFINED
+                userId={10}
+              />
+              <UNDEFINED
+                userId={10}
+              />
+            </dl>
+          </div>,
+        ],
+        "className": "card",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <h3>
+              John Dalton
+            </h3>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "John Dalton",
+            },
+            "ref": null,
+            "rendered": "John Dalton",
+            "type": "h3",
+          },
+          "type": "header",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <dl>
+              <dt>
+                E-mail:
+              </dt>
+              <dd>
+                <a
+                  href="mailto:j.dalton@company.com"
+                >
+                  j.dalton@company.com
+                </a>
+              </dd>
+              <dt>
+                Company:
+              </dt>
+              <dd>
+                Huuuuge company
+              </dd>
+              <UNDEFINED
+                userId={10}
+              />
+              <UNDEFINED
+                userId={10}
+              />
+            </dl>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <dt>
+                  E-mail:
+                </dt>,
+                <dd>
+                  <a
+                    href="mailto:j.dalton@company.com"
+                  >
+                    j.dalton@company.com
+                  </a>
+                </dd>,
+                <dt>
+                  Company:
+                </dt>,
+                <dd>
+                  Huuuuge company
+                </dd>,
+                <UNDEFINED
+                  userId={10}
+                />,
+                <UNDEFINED
+                  userId={10}
+                />,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "E-mail:",
+                },
+                "ref": null,
+                "rendered": "E-mail:",
+                "type": "dt",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <a
+                    href="mailto:j.dalton@company.com"
+                  >
+                    j.dalton@company.com
+                  </a>,
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "j.dalton@company.com",
+                    "href": "mailto:j.dalton@company.com",
+                  },
+                  "ref": null,
+                  "rendered": "j.dalton@company.com",
+                  "type": "a",
+                },
+                "type": "dd",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Company:",
+                },
+                "ref": null,
+                "rendered": "Company:",
+                "type": "dt",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Huuuuge company",
+                },
+                "ref": null,
+                "rendered": "Huuuuge company",
+                "type": "dd",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "userId": 10,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": Object {
+                  "$$typeof": Symbol(react.memo),
+                  "WrappedComponent": [Function],
+                  "compare": null,
+                  "displayName": "Connect(PostList)",
+                  "type": [Function],
+                  Symbol(Symbol.hasInstance): [Function],
+                },
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "userId": 10,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": Object {
+                  "$$typeof": Symbol(react.memo),
+                  "WrappedComponent": [Function],
+                  "compare": null,
+                  "displayName": "Connect(AlbumList)",
+                  "type": [Function],
+                  Symbol(Symbol.hasInstance): [Function],
+                },
+              },
+            ],
+            "type": "dl",
+          },
+          "type": "div",
+        },
+      ],
+      "type": "li",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

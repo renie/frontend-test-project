@@ -6,7 +6,7 @@ export default function appReducer(state = initialState, action) {
     case types.GET_USERS_SUCCESS:
       return {
         app: {
-          users: action.users ? action.users : []
+          users: action.users ? action.users.map(user => ({...user, posts: [], albums: []})) : []
         }
       }
 

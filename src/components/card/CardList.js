@@ -9,7 +9,7 @@ const CardList = ({ users = [] }) => {
     <ul className="cardList">
     {
       users.map((user, index) => (
-        <Card key={index} {...user} />
+        <Card key={user.id} user={user} />
       ))
     }
     </ul>
